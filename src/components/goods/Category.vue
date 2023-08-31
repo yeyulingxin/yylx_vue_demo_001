@@ -135,7 +135,7 @@ export default {
   },
   methods: {
     async getCateList() {
-      const result = await this.$http.post('/goods/getCategoryList', this.queryInfo)
+      const result = await this.$http.post('/goods/getCategoryPage', this.queryInfo)
       if (result.data.code !== 200) {
         return this.$message.error(result.data.msg)
       }
