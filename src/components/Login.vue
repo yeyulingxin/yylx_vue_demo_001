@@ -60,8 +60,7 @@ export default {
         }
         this.$message.success("登录成功！")
         // token存储
-        // window.sessionStorage.setItem("token", result.data.token)
-        window.sessionStorage.setItem("token", "test")
+        window.sessionStorage.setItem("token", result.data.token)
         //编程式导航跳转
         await this.$router.push("/home")
       })
